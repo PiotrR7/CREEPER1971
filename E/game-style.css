@@ -1,0 +1,92 @@
+h1 {
+  margin-bottom: 20px;
+}
+
+#game {
+  position: relative;
+  margin: 0 auto;
+  width: 300px;
+  height: 400px;
+  border: 2px solid #fff;
+  background: #333;
+  display: flex;
+
+  background-color: #222222;
+  border: 3px solid lime;
+  border-radius: 10px;
+
+  -webkit-box-shadow: 3px 5px 38px -3px rgba(6, 255, 0, 1);
+  -moz-box-shadow: 3px 5px 38px -3px rgba(6, 255, 0, 1);
+  box-shadow: 3px 5px 38px -3px rgba(6, 255, 0, 1);
+}
+
+.lane {
+  flex: 1;
+  border-left: 4px solid rgba(128, 128, 128, 0.11);
+  position: relative;
+}
+
+/* Usuń niepotrzebne obramowanie po bokach */
+.lane:first-child {
+  border-left: none;
+}
+.lane:last-child {
+  border-right: none;
+}
+
+/* Styl nut – spadających elementów */
+.note {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+/* Ustalenie kolorów nut i aktywnego obszaru (przycisku) */
+
+/* Lewa kolumna: czerwony */
+.lane[data-lane="0"] .note {
+  background: rgba(0, 255, 0, 0.664);
+  border: 2px solid lime;
+}
+.lane[data-lane="0"] .active {
+  background: rgba(0, 255, 0, 0.664);
+}
+.lane[data-lane="0"] {
+  border: 0;
+}
+
+/* Środkowa kolumna: niebieski */
+.lane[data-lane="1"] .note {
+  background: rgba(0, 255, 0, 0.664);
+  border: 2px solid lime;
+}
+.lane[data-lane="1"] .active {
+  background: rgba(0, 255, 0, 0.664);
+}
+
+/* Prawa kolumna: zielony */
+.lane[data-lane="2"] .note {
+  background: rgba(0, 255, 0, 0.664);
+  border: 2px solid lime;
+}
+.lane[data-lane="2"] .active {
+  background: rgba(0, 255, 0, 0.664);
+}
+
+/* Zwiększony obszar trafienia – 100px */
+.active {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+}
+
+#score {
+  margin: 5px 0 0 5px;
+  font-size: 26px;
+  position: absolute;
+  z-index: 2;
+  color: lime;
+}
