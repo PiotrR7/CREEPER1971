@@ -1,0 +1,45 @@
+#game-container {
+    position: relative;
+    width: 320px;
+    height: 480px;
+    overflow: hidden;
+
+    background-color: #222222;
+    border: 3px solid lime;
+    border-radius: 10px;
+
+    -webkit-box-shadow: 3px 5px 38px -3px rgba(6, 255, 0, 1);
+    -moz-box-shadow: 3px 5px 38px -3px rgba(6, 255, 0, 1);
+    box-shadow: 3px 5px 38px -3px rgba(6, 255, 0, 1);
+}
+canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#resetButton {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 20px;
+    cursor: pointer;
+    /* display: none;  Domyślnie przycisk resetu jest ukryty */
+
+    background-color: #222222;
+    border: 3px solid lime;
+    border-radius: 5px;
+
+    color: lime;
+    font-family: "Jersey 15";
+    font-size: 25px;
+    letter-spacing: 2px;
+
+    transition: 0.3s ease-in-out;
+}
+
+#resetButton:hover {
+    background-color: lime;
+    color: white;
+}

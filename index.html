@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEEK</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="falling-numbers.css">
+
+    <script src="falling-numbers.js" defer></script>
+    <script type="module" src="speaker/speaker-box.js" defer></script>
+    <script src="script.js" defer></script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Righteous&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+</head>
+<body>
+    <header>
+        <h1>CREEPER</h1>
+        <div class="button-menu">
+            <!-- <button class="menu-button mbtn1">
+                <span class="material-symbols-outlined">home</span>
+            </button> -->
+            <button class="menu-button mbtn2">
+                <span class="material-symbols-outlined">arrows_output</span>
+            </button>
+            <button class="menu-button mbtn3">
+                <span class="material-symbols-outlined">width_full</span>
+            </button>
+            <button class="menu-button mbtn4">
+                <span class="material-symbols-outlined">dark_mode</span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <table>
+            <tr>
+                <td colspan="3">
+                    <div class="game-box game-box-0">
+                        <div id="slider-heading">1</div>
+                        <div class="slider" id="slider">
+                            <img src="images/main_bg.jpg" alt="Slide 1">
+                            <img src="images/slider-img1.png" alt="Slide 2">
+                            <img src="images/slider-img2.png" alt="Slide 3">
+                            <img src="images/slider-img3.png" alt="Slide 4">
+                            <img src="images/slider-img4.png" alt="Slide 5">
+                            <img src="images/slider-img5.png" alt="Slide 6">
+                        </div>
+                        <div class="slider-controls" id="slider-controls">
+                            <button data-slide="0" class="active"></button>
+                            <button data-slide="1"></button>
+                            <button data-slide="2"></button>
+                            <button data-slide="3"></button>
+                            <button data-slide="4"></button>
+                            <button data-slide="5"></button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="height: 70px;"></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="game-box game-box-1">
+                        <div class="circle-box">
+                            <a href="A\index.html">
+                                <div class="play-button">
+                                    <span class="material-symbols-outlined">play_arrow</span>
+                                </div>
+                            </a>
+                            </div>
+                        <p>PLAY LEVEL 1</p>
+                        <img src="images/img1.1.webp" alt="image">
+                    </div>
+                </td>
+                <td>
+                    <div class="game-box game-box-2">
+                        <div class="circle-box" id="level-btn-2">
+                            <a href="B\index.html">
+                                <div class="play-button">
+                                    <span class="material-symbols-outlined">play_arrow</span>
+                                </div>
+                            </a>
+                        </div>
+                        <p>PLAY LEVEL 2</p>
+                        <img class="game-box-2-image" src="images/img1.2.png" alt="image">
+                    </div>
+                </td>
+                <td>
+                    <div class="game-box game-box-3">
+                        <div class="circle-box" id="level-btn-3">
+                            <a href="C\index.html">
+                                <div class="play-button">
+                                    <span class="material-symbols-outlined">play_arrow</span>
+                                </div>
+                            </a>
+                        </div>
+                        <p>PLAY LEVEL 3</p>
+                        <img class="game-box-3-image" src="images/img1.4.png" alt="image">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <div class="game-box game-box-4">
+                        <div class="circle-box"  id="level-btn-4">
+                            <a href="D\index.html">
+                                <div class="play-button">
+                                    <span class="material-symbols-outlined">play_arrow</span>
+                                </div>
+                            </a>
+                        </div>
+                        <p>PLAY LEVEL 4</p>
+                        <img class="game-box-4-image" src="images/img1.3.png" alt="image">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="game-box game-box-5">
+                        <div class="circle-box" id="level-btn-5">
+                            <a href="E\index.html">
+                                <div class="play-button">
+                                    <span class="material-symbols-outlined">play_arrow</span>
+                                </div>
+                            </a>
+                        </div>
+                        <p>PLAY LEVEL 5</p>
+                        <img class="game-box-5-image" src="images/img1.5.png" alt="image">
+                    </div>
+                </td>
+                <td>
+                    <div class="game-box game-box-6">
+                        <div class="circle-box" id="level-btn-6">
+                            <a href="F\index.html">
+                                <div class="play-button">
+                                    <span class="material-symbols-outlined">play_arrow</span>
+                                </div>
+                            </a>
+                        </div>
+                        <p>PLAY LEVEL 6</p>
+                        <img class="game-box-6-image" src="images/img1.6.png" alt="image">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </main>
+    <div id="matrix"></div>
+
+    <script type="module">
+        import { startAnimation } from "/speaker/speaker-box.js";
+
+
+        let wasEndSpeakerPlayed = localStorage.getItem("wasEndSpeakerPlayed");
+        let isLevelSixFinished = localStorage.getItem("IsLevelSixFinished");
+        
+        if (IsLevelSixFinished == "true") {
+            if (wasEndSpeakerPlayed != 'true') {
+                startAnimation("Gratulacje przejścia gry. Jako twórcy tego projektu, mamy nadzieję, że nauczyliśmy cię nowych informacji o zagrożeniach w sieci. Wierzymy, żę dostarczyliśmy tobie odrobinę rozrywki i radości. Dziękujemy za zagranię w naszą grę!", "speaker/voice/zakonczenie.wav");
+                localStorage.setItem("wasEndSpeakerPlayed", "true");
+            }
+        }
+
+        const slider = document.getElementById('slider');
+        const controls = document.getElementById('slider-controls');
+        const buttons = controls.querySelectorAll('button');
+        const heading = document.getElementById('slider-heading');
+    
+        const headings = [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+        ];
+    
+        let currentIndex = 0;
+    
+        const changeSlide = (index) => {
+            slider.style.transform = `translateX(-${index * 100}%)`;
+            buttons.forEach(btn => btn.classList.remove('active'));
+            buttons[index].classList.add('active');
+            heading.textContent = headings[index];
+        };
+    
+        buttons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                currentIndex = index;
+                changeSlide(index);
+            });
+        });
+    
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % headings.length;
+            changeSlide(currentIndex);
+        }, 10000);
+        
+    </script>
+    
+</body>
+</html>
